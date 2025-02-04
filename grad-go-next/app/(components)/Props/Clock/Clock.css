@@ -1,0 +1,89 @@
+.rotated-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rotated-box {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8), -5px -5px 10px rgba(255, 255, 255, 0.1);
+    transform: rotate(0deg); /* Rotate the box */
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Title styling */
+  .box-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transform: rotate(0deg); /* Counter-rotate the title to keep it readable */
+    position: absolute;
+    top: 20px; /* Position title just above the clock */
+    text-align: center;
+    width: 100%; /* Ensure the title stays centered */
+  }
+  
+  /* Clock container styles */
+  .clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg); /* Counter-rotate the clock */
+  }
+  
+  .react-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #1e1e2f;
+    box-shadow: 0 5px 20px #42415d; /* Added box shadow for the clock */
+  }
+  
+  /* React Clock hand and marker styling */
+  .react-clock__hand__body {
+    border-radius: 10px;
+  }
+  
+  .react-clock__minute-hand__body {
+    background-color: #6948fe;
+  }
+  
+  .react-clock__hour-hand__body {
+    background-color: #a29bfe;
+  }
+  
+  .react-clock__mark__body {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .react-clock__center {
+    background-color: #fff;
+  }
+  
+  .react-clock__mark__number {
+    padding: 5px;
+    color: #fff;
+  }
+  
+  /* Center dot styling */
+  .center-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
