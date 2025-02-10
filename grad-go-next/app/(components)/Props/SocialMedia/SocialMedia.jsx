@@ -6,7 +6,7 @@ import { FiSearch } from 'react-icons/fi';
 const SocialMedia = () => {
   return (
     <div className="m-5 flex justify-center items-center">
-      <div className="w-72 h-72 bg-[#1a1a2e] rounded-2xl shadow-[10px_10px_20px_rgba(0,0,0,0.8),-5px_-5px_10px_rgba(255,255,255,0.1)] flex flex-col gap-2 justify-start p-4">
+      <div className="w-64 h-72 bg-[#1a1a2e] rounded-2xl shadow-[10px_10px_20px_rgba(0,0,0,0.8),-5px_-5px_10px_rgba(255,255,255,0.1)] flex flex-col gap-2 justify-start p-4">
         {/* Search Input */}
         <div className="relative mb-4">
           <FiSearch className="absolute top-1/2 left-3 transform -translate-y-1/2 text-white opacity-50" />

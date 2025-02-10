@@ -37,13 +37,10 @@ const Widgets = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="flex w-full h-screen">
-      <div className="w-[40%] h-full hidden md:flex items-center justify-center"></div>
-      <div className="w-full md:w-[70%] h-full flex items-center justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-80">
-          <div className="flex flex-col justify-center items-center p-3">
-            <StockMarketBox />
-          </div>
+    <div className="flex w-full h-screen mt-10">
+      <div className="w-[75%] h-full hidden md:flex items-center justify-center"></div>
+      <div className="w-full md:w-[25%] h-full flex items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[19rem]">
           <div className="flex flex-col justify-center items-center p-3">
             <Weather />
             <SocialMedia />

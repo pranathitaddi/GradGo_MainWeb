@@ -1,41 +1,48 @@
 import React from "react";
+import Image from "next/image";
 
 const services = [
   {
     title: "AI/ML",
     description:
       "Leverage AI-driven solutions to unlock insights, automate processes, and drive smarter decisions.",
-    icon: "🤖", // Replace with an actual icon if needed
+    icon: "🤖",
+    address: "/microchip.png",
   },
   {
     title: "IoT",
     description:
       "Build intelligent, connected systems that revolutionize operations and enhance productivity.",
     icon: "🔗",
+    address: "/technology.png",
   },
   {
     title: "AR/VR",
     description:
       "Immerse your users in interactive experiences with cutting-edge AR and VR technologies.",
     icon: "🕶️",
+    address: "/vr-glasses.png",
   },
   {
     title: "Web Design & Development",
     description:
       "Create stunning, responsive websites tailored to engage and convert your audience.",
     icon: "🌐",
+    address: "/code.png",
   },
   {
     title: "UI/UX",
     description:
       "Craft intuitive, visually appealing designs that put user experience at the forefront.",
     icon: "🎨",
+    address: "/ux-design.png",
   },
   {
     title: "App Development",
     description:
       "Design and develop scalable mobile applications that deliver seamless user experiences.",
     icon: "📱",
+    address: "/mobile-development.png",
   },
 ];
 
@@ -49,7 +56,15 @@ const ServicesGrid = () => {
             className="bg-gray-800 bg-opacity-30 text-white p-6 rounded-3xl shadow-lg flex flex-col items-center text-center space-y-4"
           >
             {/* Icon */}
-            <div className="text-4xl">{service.icon}</div>
+            <div className="w-16 h-16 border rounded-full flex items-center justify-center shadow-md">
+              <Image
+                src={service.address}
+                alt="Expert Team Icon"
+                width={50}
+                height={50}
+                className="w-8 h-8 invert"
+              />
+            </div>
             {/* Title */}
             <h3 className="text-xl font-semibold">{service.title}</h3>
             {/* Description */}

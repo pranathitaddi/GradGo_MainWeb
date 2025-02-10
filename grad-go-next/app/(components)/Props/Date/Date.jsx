@@ -14,7 +14,7 @@ const CalenderBox = () => {
   }, []);
 
   return (
-    <div className="m-5 w-72 calender-box-container">
+    <div className="m-5 w-64 calender-box-container">
       <div className="calender-box">
         <div className="calender-header">
         <div className="calender-day text-[#4b417e]">{days[date.getDay()]}</div>

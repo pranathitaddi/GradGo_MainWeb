@@ -22,75 +22,79 @@ const Navbar = () => {
         // onClick={() => setShowDropdown(false)}
         className="bg-bg1 text-white shadow-lg"
       >
-        <div className="container flex flex-row justify-between items-center py-4 px-6 pl-4">
+        <div className="container flex flex-row justify-between items-center py-2 px-6 pl-4">
           <div className="flex items-center space-x-2">
             <Image
               src="/Logo.png"
               alt="GradGo Logo"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               className="rounded-[40%]"
             />
-            <span className="font-bold text-lg px-1">GradGo</span>
+            {/* <span className="font-bold text-lg px-1">GradGo</span> */}
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden ml-auto md:contents xl:text-[1rem] md:text-[0.68rem] mt-2">
-            <nav className="flex">
-              <div className="relative">
-                <Link href="/" className={getLinkClass("/")}>
-                  Home
-                </Link>
+          <div className="hidden md:contents xl:text-[1rem] md:text-[0.7rem] mt-2 flex-grow">
+            <nav className="flex flex-row justify-start">
+              <div className="flex flex-row">
+                <div className="relative">
+                  <Link href="/" className={getLinkClass("/")}>
+                    Home
+                  </Link>
+                </div>
+                <div className="relative">
+                  <Link href="/about" className={getLinkClass("/about")}>
+                    About Us
+                  </Link>
+                </div>
+                <div className="relative">
+                  <Link
+                    href="/services"
+                    className={getLinkClass("/services")}
+                    onClick={() => setShowDropdown(!showDropdown)}
+                  >
+                    Services
+                  </Link>
+                  {showDropdown && (
+                    <div className="absolute left-0 mt-2 w-48 bg-[#0f0f2e] rounded-md shadow-xl py-1 z-50">
+                      <Link
+                        href="/services/tech"
+                        className="block px-3 py-2 text-sm text-gray-200 hover:bg-blue-600 transition-colors duration-200 border-b border-gray-700"
+                        onClick={() => setShowDropdown(false)}
+                      >
+                        Technology Solutions
+                      </Link>
+                      <Link
+                        href="/services/marketing"
+                        className="block px-3 py-2 text-sm text-gray-200 hover:bg-blue-600 transition-colors duration-200 border-b border-gray-700"
+                        onClick={() => setShowDropdown(false)}
+                      >
+                        Digital Marketing
+                      </Link>
+                      <Link
+                        href="/services/consultancy"
+                        className="block px-3 py-2 text-sm text-gray-200 hover:bg-blue-600 transition-colors duration-200"
+                        onClick={() => setShowDropdown(false)}
+                      >
+                        Consultancy Services
+                      </Link>
+                    </div>
+                  )}
+                  <Link href="/careers" className={getLinkClass("/careers")}>
+                    Careers
+                  </Link>
+                  <Link href="/projects" className={getLinkClass("/projects")}>
+                    Projects
+                  </Link>
+                </div>
               </div>
-              <div className="relative">
-                <Link href="/about" className={getLinkClass("/about")}>
-                  About Us
-                </Link>
-              </div>
-              <div className="relative">
-                <Link
-                  href="/services"
-                  className={getLinkClass("/services")}
-                  onClick={() => setShowDropdown(!showDropdown)}
-                >
-                  Services
-                </Link>
-                {showDropdown && (
-                  <div className="absolute left-0 mt-2 w-48 bg-[#0f0f2e] rounded-md shadow-xl py-1 z-50">
-                    <Link
-                      href="/services/tech"
-                      className="block px-3 py-2 text-sm text-gray-200 hover:bg-blue-600 transition-colors duration-200 border-b border-gray-700"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Technology Solutions
-                    </Link>
-                    <Link
-                      href="/services/marketing"
-                      className="block px-3 py-2 text-sm text-gray-200 hover:bg-blue-600 transition-colors duration-200 border-b border-gray-700"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Digital Marketing
-                    </Link>
-                    <Link
-                      href="/services/consultancy"
-                      className="block px-3 py-2 text-sm text-gray-200 hover:bg-blue-600 transition-colors duration-200"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Consultancy Services
-                    </Link>
-                  </div>
-                )}
-              </div>
-              {/* <Link href="/careers" className={getLinkClass("/careers")}>
-                Careers
-              </Link>
-              <Link href="/projects" className={getLinkClass("/projects")}>
-                Projects
-              </Link> */}
-              <div className="relative">
-                <Link href="/contact" className={getLinkClass("/contact")}>
-                  Contact Us
-                </Link>
+              <div className="relative flex ml-auto">
+                <div>
+                  <Link href="/contact" className={getLinkClass("/contact")}>
+                    Contact Us
+                  </Link>
+                </div>
               </div>
             </nav>
           </div>

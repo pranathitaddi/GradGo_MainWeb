@@ -17,6 +17,9 @@ export default {
         pri: {
           DEFAULT: "#56a2ff",
         },
+        sec: {
+          DEFAULT: "#1a1a2e",
+        }
       },
       backgroundImage: {
         "bg-gradient":

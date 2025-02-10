@@ -26,7 +26,7 @@ const ScheduleBox = () => {
   };
 
   return (
-    <div className="m-5 w-72 bg-[#1a1a2e] rounded-2xl shadow-[10px_10px_20px_rgba(0,0,0,0.8),-5px_-5px_10px_rgba(255,255,255,0.1)] p-10 flex flex-col gap-5">
+    <div className="m-5 w-64 bg-[#1a1a2e] rounded-2xl shadow-[10px_10px_20px_rgba(0,0,0,0.8),-5px_-5px_10px_rgba(255,255,255,0.1)] p-10 flex flex-col gap-5">
       <div className="flex justify-between items-center">
         <h1 className="text-white text-xl font-bold">Schedule</h1>
         <button

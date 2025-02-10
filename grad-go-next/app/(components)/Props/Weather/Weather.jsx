@@ -86,7 +86,7 @@ const Weather = () => {
   }, []);
 
   return (
-    <div className="m-5 w-72 h-40 bg-zinc-900 rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+    <div className="m-5 w-64 h-40 bg-[#1a1a2e] shadow-[10px_10px_20px_rgba(0,0,0,0.8),-5px_-5px_10px_rgba(255,255,255,0.1)] rounded-2xl p-6 flex flex-col justify-between">
       {/* Location and Icon */}
       <div className="flex items-center justify-between">
         <h1 className="text-white text-lg font-semibold">{location}</h1>
